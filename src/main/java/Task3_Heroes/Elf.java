@@ -14,8 +14,8 @@ public class Elf extends Character {
         if (this.getPower() > opponentPower){
             character.setHitPoints(0);
         }
-        if (this.getPower() < opponentPower){
-            character.setHitPoints(opponentPower - 1);
+        if (this.getPower() <= opponentPower){
+            character.setPower(opponentPower - 1);
         }
     }
 }
